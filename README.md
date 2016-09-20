@@ -6,10 +6,10 @@ This app can provide the learning function,Such as online learning video, offlin
 ![Aaron Swartz](https://github.com/DongDongDongDong/StudyOnline/blob/master/sudyOnline/gif/example.gif?raw=true)
 
 #### 功能介绍
-模仿Nice可以在图片上进行添加标签    
-1）标签会根据文字大小自动伸缩   
-2）点击按钮添加标签，或者点击图片来添加标签（标签会自动添加到你手指点击的位置   
-3）删除标签，默认删除最后添加的   
-4）限制最多可以添加四个标签，也可以自定义修改个数   
+一款在线学习小软件
+1）可以选择第三方进行登录，如微信，QQ，新浪微博等。
+2）选择感兴趣的课程，点击可进行视频播放。 
+3）可以离线下载或收藏课程。
+4）升级版本，清除缓存，设置网络环境等。  
 
 
