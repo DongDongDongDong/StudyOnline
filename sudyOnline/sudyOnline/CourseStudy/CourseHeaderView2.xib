@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AICourseController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UHh-6o-5wQ">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="184"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5o-Np-aut">
+                    <rect key="frame" x="0.0" y="0.0" width="340" height="138"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="HGM-dq-e0c"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="macbook2"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HGM-dq-e0c"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="didPushToNews:" destination="-1" eventType="touchUpInside" id="jUc-Og-aZh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" tag="11111" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="IT互联网+IT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2B-2r-yEa">
+                    <rect key="frame" x="20" y="153" width="100" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="hsM-Km-Qqt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="22222" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="INTERNET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anq-rL-nXH">
+                    <rect key="frame" x="128" y="153" width="63" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="大学计算机专业" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKE-ol-lXL">
+                    <rect key="frame" x="7" y="87.5" width="119" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="顶尖中文大学计算机专业课程体系" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SC8-gB-7Ma">
+                    <rect key="frame" x="8" y="112" width="195" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Anq-rL-nXH" firstAttribute="top" secondItem="SC8-gB-7Ma" secondAttribute="bottom" constant="25" id="37b-N8-Jeu"/>
+                <constraint firstItem="wKE-ol-lXL" firstAttribute="leading" secondItem="UHh-6o-5wQ" secondAttribute="leading" constant="7" id="3RW-o1-G3K"/>
+                <constraint firstItem="SC8-gB-7Ma" firstAttribute="leading" secondItem="UHh-6o-5wQ" secondAttribute="leading" constant="8" id="DEJ-of-SMA"/>
+                <constraint firstItem="s5o-Np-aut" firstAttribute="leading" secondItem="UHh-6o-5wQ" secondAttribute="leading" id="LWx-1H-s1E"/>
+                <constraint firstItem="s5o-Np-aut" firstAttribute="top" secondItem="UHh-6o-5wQ" secondAttribute="top" id="WAD-DI-Whs"/>
+                <constraint firstItem="o2B-2r-yEa" firstAttribute="top" secondItem="s5o-Np-aut" secondAttribute="bottom" constant="15" id="b76-VA-agg"/>
+                <constraint firstAttribute="bottom" secondItem="Anq-rL-nXH" secondAttribute="bottom" constant="15" id="d56-tk-TiJ"/>
+                <constraint firstAttribute="bottom" secondItem="o2B-2r-yEa" secondAttribute="bottom" constant="15" id="e8w-ro-ubg"/>
+                <constraint firstItem="Anq-rL-nXH" firstAttribute="leading" secondItem="o2B-2r-yEa" secondAttribute="trailing" constant="8" id="eoh-1P-S4k"/>
+                <constraint firstItem="o2B-2r-yEa" firstAttribute="leading" secondItem="UHh-6o-5wQ" secondAttribute="leading" constant="20" id="l4v-x2-5aa"/>
+                <constraint firstAttribute="trailing" secondItem="s5o-Np-aut" secondAttribute="trailing" id="tS6-9r-AII"/>
+                <constraint firstItem="SC8-gB-7Ma" firstAttribute="top" secondItem="wKE-ol-lXL" secondAttribute="bottom" constant="4" id="wSI-nH-XJr"/>
+                <constraint firstItem="Anq-rL-nXH" firstAttribute="top" secondItem="s5o-Np-aut" secondAttribute="bottom" constant="15" id="yso-ba-slk"/>
+            </constraints>
+            <point key="canvasLocation" x="122" y="820"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="macbook2" width="1005" height="624"/>
+    </resources>
+</document>

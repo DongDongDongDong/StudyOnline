@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CourseCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="30"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="point" translatesAutoresizingMaskIntoConstraints="NO" id="c52-2S-s5h">
+                        <rect key="frame" x="5" y="12" width="6" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="4Pl-7S-jOx"/>
+                            <constraint firstAttribute="width" secondItem="c52-2S-s5h" secondAttribute="height" multiplier="1:1" id="Mmn-76-QOf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="33333" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMd-Bh-VLH">
+                        <rect key="frame" x="19" y="4" width="197" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="c52-2S-s5h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Fgu-6v-vJy"/>
+                <constraint firstItem="AMd-Bh-VLH" firstAttribute="leading" secondItem="c52-2S-s5h" secondAttribute="trailing" constant="8" id="RAZ-1O-uIo"/>
+                <constraint firstItem="c52-2S-s5h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Yt3-Ve-3Ow"/>
+                <constraint firstAttribute="bottom" secondItem="AMd-Bh-VLH" secondAttribute="bottom" constant="5" id="acw-b4-xKI"/>
+                <constraint firstAttribute="bottom" secondItem="c52-2S-s5h" secondAttribute="bottom" constant="10" id="cVF-Al-iHd"/>
+                <constraint firstItem="AMd-Bh-VLH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="ifW-ES-7p0"/>
+                <constraint firstItem="c52-2S-s5h" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="l2E-wo-nJG"/>
+                <constraint firstAttribute="trailing" secondItem="AMd-Bh-VLH" secondAttribute="trailing" constant="8" id="skM-xL-3Sn"/>
+            </constraints>
+            <size key="customSize" width="224" height="30"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Fgu-6v-vJy"/>
+                    <exclude reference="cVF-Al-iHd"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="339" y="345"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="point" width="48" height="48"/>
+    </resources>
+</document>

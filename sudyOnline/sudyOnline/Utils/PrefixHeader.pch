@@ -1,0 +1,80 @@
+//
+//  PrefixHeader.pch
+//  sudyOnline
+//
+//  Created by andylau on 16/3/1.
+//  Copyright © 2016年 andylau. All rights reserved.
+//
+
+#ifndef CheckAuto_PrefixHeader_pch
+#define CheckAuto_PrefixHeader_pch
+
+#ifdef DEBUG
+# define AILog(format, ...) NSLog((@"[文件名:%s]" "[函数名:%s]" "[行号:%d]" format), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define AILog(...)
+#endif
+
+
+#define SHARESDK_APPKEY @"101d472261674"
+#define SHARESDK_APPSECRET @"03e334e59eab2b2c2f70115288a2a936"
+
+#define SINA_APPKEY @"2805097691"
+#define SINA_APPSECRET @"a6fe1f47e6c7f2dec5217d18a1f7d829"
+
+#define QQ_APPID @"1105233774"
+#define QQ_APPKEY @"M4WsNAIpyp7q9sfb"
+
+// 首页接口
+#define HOME_PAGE_DATA @"http://c.open.163.com/mobile/recommend/v1.do?mt=iphone"
+#define DETAIL_MOVIE_URL(str) [NSString stringWithFormat:@"http://so.open.163.com/movie/%@/getMovies4Ipad.htm",str]
+
+// 全部课程接口
+#define COURSE_URL(str) [NSString stringWithFormat:@"http://platform.sina.com.cn/opencourse/get_courses?discipline_id=%@&order_by=modified_at%20DESC&app_key=1919446470&page=1&count_per_page=20",str]
+
+#define CONSTANT_THEME_COLOR_HDEX   0x2c88d3
+
+
+#define AIARGBColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define AIColor(r, g, b) HMARGBColor(r, g, b, 1.0)
+
+#define AIRandomColor HMColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+#define AINoteCenter [NSNotificationCenter defaultCenter]
+
+
+
+// 3D Touch 
+#define AI3DAddDetectNotefication @"3DAddDetectNotefication"
+
+
+
+
+#define ScreenModeSize [[UIScreen mainScreen] currentMode].size     //放大和标准模式的屏幕size
+#define ScreenResolution [UIScreen mainScreen].scale                //屏幕分辨率
+
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#define PortraitScreenWidth   (SCREENWIDTH < SCREENHEIGHT ? SCREENWIDTH : SCREENHEIGHT)
+#define PortraitScreenHeight  (SCREENWIDTH < SCREENHEIGHT ? SCREENHEIGHT : SCREENWIDTH)
+#define kDeviceVersion [[UIDevice currentDevice].systemVersion floatValue]
+
+#define kNavbarHeight ((kDeviceVersion>=7.0)? 64 :44 )
+#define kIOS7DELTA   ((kDeviceVersion>=7.0)? 20 :0 )
+#define kTabBarHeight 49
+
+
+
+// 字体大小
+#define XLTextFont [UIFont systemFontOfSize:((SCREENWIDTH > 320) ? 15 : 14)]
+#define XLBoldTextFont [UIFont boldSystemFontOfSize:((SCREENWIDTH > 320) ? 15 : 14)]
+
+// 颜色宏  参数格式为：0xFFFFFF
+#define HexColor(rgbValue) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 \
+                green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 \
+                 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
+
+
+
+#endif

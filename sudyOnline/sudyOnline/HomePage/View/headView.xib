@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fZT-ES-7T6">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="section_title_play" translatesAutoresizingMaskIntoConstraints="NO" id="rpw-dy-IgG">
+                    <rect key="frame" x="7" y="5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Jnj-cZ-gWX"/>
+                        <constraint firstAttribute="width" constant="20" id="MNW-d1-2w9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="10001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="精心推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnS-8u-zxr">
+                    <rect key="frame" x="35" y="6" width="60" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcH-OZ-mY6" userLabel="Line">
+                    <rect key="frame" x="10" y="27" width="225" height="1"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.48999999999999999" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9TW-qI-zEh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="zcH-OZ-mY6" firstAttribute="top" secondItem="gnS-8u-zxr" secondAttribute="bottom" constant="3" id="0YR-4D-gNi"/>
+                <constraint firstAttribute="trailing" secondItem="zcH-OZ-mY6" secondAttribute="trailing" constant="10" id="1qH-OQ-EvS"/>
+                <constraint firstItem="zcH-OZ-mY6" firstAttribute="leading" secondItem="fZT-ES-7T6" secondAttribute="leading" constant="10" id="BWT-dn-mdd"/>
+                <constraint firstItem="rpw-dy-IgG" firstAttribute="leading" secondItem="fZT-ES-7T6" secondAttribute="leading" constant="7" id="BdL-h4-JxN"/>
+                <constraint firstItem="gnS-8u-zxr" firstAttribute="leading" secondItem="rpw-dy-IgG" secondAttribute="trailing" constant="8" id="IrD-Rs-QaO"/>
+                <constraint firstItem="rpw-dy-IgG" firstAttribute="centerY" secondItem="fZT-ES-7T6" secondAttribute="centerY" id="pRw-i9-zWS"/>
+                <constraint firstItem="gnS-8u-zxr" firstAttribute="centerY" secondItem="fZT-ES-7T6" secondAttribute="centerY" id="yW8-81-fyZ"/>
+            </constraints>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="section_title_play" width="96" height="96"/>
+    </resources>
+</document>
